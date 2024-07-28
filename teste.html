@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .botao {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="botao" onclick="mudarCor()">Clique Aqui</button>
+
+    <script>
+        function mudarCor() {
+            const botao = document.querySelector('.botao');
+            botao.style.backgroundColor = '#ff5733'; // Muda a cor de fundo
+            botao.style.display = 'none'; // Esconde o botão
+        }
+    </script>
+</body>
+</html>

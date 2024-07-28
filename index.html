@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Lista de casamento</title>
+</head>
+<body>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Início do menu (Nav bar) -->
+    <nav style="position: sticky; top: 0px; z-index: 1" class="navbar navbar-expand-lg navbar-light">
+        <a style="color: aliceblue;" class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span style="color: aliceblue;" class="navbar-toggler-icon"></span>
+        </button>
+
+        <div style="color: aliceblue;" class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a style="color: aliceblue;" class="nav-link" href="#home">Home<span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: aliceblue;" class="nav-link" href="#lista">Lista de Presentes</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: aliceblue;" class="nav-link" href="#endereco">Endereço</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Início Cabeçalho -->
+    <header id="home" style="margin-top: 2%;">
+        <div style="text-align: center;">
+            <img class="img-fluid" src="Image/convite.jpg" alt="">
+            <img class="img-fluid" style="margin-bottom: 10%; text-align: center;" src="Image/renan e fernanda texto.jpg" alt="">
+            <img style="width: 90%; text-align: center" src="Image/Foto casal.jpg" alt="Imagem de capa do card">
+            <img style="width: 70%;" src="Image/texto convite secundario.jpg" alt="">
+        </div>
+    </header>
+
+    <!-- Corpo -->
+    <div id="lista" style="text-align: center;">
+        <img style="width: 60%;" src="Image/lista de presentes.jpg" alt="Lista de presentes">
+    </div>
+
+    <div class="card-group margem">
+        <div id="panela_arroz" class="card" style="text-align: center;">
+            <img id="img_panela_arroz" class="card-img-top" src="https://t62533.vteximg.com.br/arquivos/ids/942876-1000-1000/PE42.jpg?v=638265785854000000" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title primaria">Panela de arroz</h5>
+                <button id="BTN_panela_arroz" type="button" class="btn btn-light" style="color: #556b2f;" onclick="changeStyle(this)">Presentear</button>
+            </div>
+        </div>
+        <div class="card" style="text-align: center;">
+            <img class="card-img-top" src="Image/1xg.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title primaria">Maquina de Lavar</h5>
+                <button id="BTN_maquina" type="button" class="btn btn-light" style="color: #556b2f;" onclick="changeStyle(this)">Presentear</button>
+            </div>
+        </div>
+        <div class="card" style="text-align: center;">
+            <img class="card-img-top" src="https://t62533.vteximg.com.br/arquivos/ids/942876-1000-1000/PE42.jpg?v=638265785854000000" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title primaria">Panela de arroz</h5>
+                <button type="button" class="btn btn-light" style="color: #556b2f;" onclick="changeStyle(this)">Presentear</button>
+            </div>
+        </div>
+    </div>
+    <footer id="endereco">
+        <h3 class="primaria" style="margin-top: 5%;">
+            Local do evento
+        </h3>
+        <p class="primaria">
+            Parque Bernardo Elis <br>
+            Goiânia - GO
+        </p>
+        <div class="primaria">
+            <iframe style="width: 90%;" class="primaria" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.3157007401!2d-49.32158252495503!3d-16.711092446194925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6f390eb474f%3A0x2d273fabad588a97!2sParque%20Bernardo%20%C3%89lis%20de%20Goi%C3%A2nia!5e0!3m2!1spt-BR!2sbr!4v1721516712534!5m2!1spt-BR!2sbr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script>
+        function changeStyle(button) {
+            button.style.display = 'none'; // Oculta o botão
+            alert('Você presenteou este item!'); // Mensagem de confirmação
+            fetch('/api/botao', {
+                method: 'POST'
+            });
+        }
+
+        // JavaScript (cliente)
+        fetch('/api/botao')
+            .then(response => response.json())
+            .then(data => {
+                if (data.botaoClicado) {
+                    document.querySelectorAll('button').forEach(button => button.style.display = 'none');
+                } else {
+                    document.querySelectorAll('button').forEach(button => button.style.display = 'inline-block');
+                }
+            });
+
+        // Node.js (servidor)
+        const express = require('express');
+        const app = express();
+        const { Pool } = require('pg');
+        const pool = new Pool({
+            user: 'seu_usuario',
+            host: 'localhost',
+            database: 'seu_banco_de_dados',
+            password: 'sua_senha',
+            port: 5432
+        });
+
+        app.use(express.json());
+
+        app.get('/api/botao', async (req, res) => {
+            const result = await pool.query('SELECT botaoClicado FROM estados');
+            res.json(result.rows[0]);
+        });
+
+        app.post('/api/botao', async (req, res) => {
+            await pool.query('UPDATE estados SET botaoClicado = true');
+            res.sendStatus(200);
+        });
+
+        app.listen(3000, () => {
+            console.log('Servidor rodando na porta 3000');
+        });
+    </script>
+</body>
+</html>
